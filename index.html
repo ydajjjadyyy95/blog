@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog da Jady</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Blog da Jady</h1>
+    <p>Fotos, histórias e momentos especiais</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Nova postagem</h2>
+      <form id="form-post">
+        <label for="titulo">Título:</label>
+        <input id="titulo" type="text" required>
+
+        <label for="descricao">O que você quer contar?</label>
+        <textarea id="descricao" rows="4" required></textarea>
+
+        <label for="imagem">Escolha uma imagem:</label>
+        <input id="imagem" type="file" accept="image/*">
+
+        <button type="submit">Publicar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Minhas postagens</h2>
+      <div id="lista-posts"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com carinho para você</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
